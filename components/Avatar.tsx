@@ -20,6 +20,7 @@ export default function Avatar({
 
   useEffect(() => {
     if (url) downloadImage(url)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [url])
 
   async function downloadImage(path: string) {
